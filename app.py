@@ -43,7 +43,6 @@ def extract_txt(uploaded_file):
 # to make sure the uploaded resume is processed
 if uploaded_resume is not None:
     resume = extract_txt(uploaded_resume)
-
 # To use the Logistic Regression model to get result
 def result(JD_txt, resume_txt):
     cleaned_jd = clean_text(JD_txt)
