@@ -14,7 +14,7 @@ from nltk.corpus import stopwords
 st.title("Candidate Selection Tool")
 st.subheader("NLP Based Resume Screening")
 st.caption("Aim of this project is to check whether a candidate is qualified for a role based on the information captured on their resume. It's a form of pattern matching between a job's requirements and the qualifications of a candidate based on their resume.")
-uploaded_resume = st.file_uploader("Upload Resume", type=["txt", "pdf", "docx"])
+uploaded_resume = st.file_uploader("Upload Resume", type=["txt", "pdf", "docx"], accept_multiple_files=True)
 job_description = st.text_area("Enter Job Description")
 click = st.button("Match")
 
@@ -52,7 +52,7 @@ def extract_txt(uploaded_file):
 # to make sure the uploaded resume is processed
 if uploaded_resume is not None:
     resume = extract_txt(uploaded_resume)
-# To use the Logistic Regression model to get result
+
 def result(JD_txt, resume_txt):
     cleaned_jd = clean_text(JD_txt)
     cleaned_resume = clean_text(resume_txt)
