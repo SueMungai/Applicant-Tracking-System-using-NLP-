@@ -8,9 +8,9 @@ import nltk
 from nltk.corpus import stopwords
 
 # Streamlit UI
-st.title("Resume Matching Tool")
-st.subheader("Upload resumes and provide a job description to find the best matches.")
-st.caption("This tool matches resumes against a job description.")
+st.title("Resume Matching and Screening Tool")
+st.subheader("Upload your resumes and provide a job description to find the best matches.")
+st.caption("The aim of this project is to check whether a candidate is qualified for a role based on the information captured on their resume.  ")
 
 # Download NLTK stopwords
 nltk.download('stopwords')
