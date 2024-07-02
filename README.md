@@ -37,22 +37,25 @@ Text Cleaning: The extracted text is cleaned by removing non-word characters, ex
 
 ## Modeling
 
-Text Vectorization
+- Text Vectorization
 To compare the job description and resumes, we convert the text data into numerical vectors using TF-IDF (Term Frequency-Inverse Document Frequency) vectorization. This technique helps in understanding the importance of words in the context of the documents.
 
-Similarity Measurement
+- Similarity Measurement
 Cosine similarity is used to measure the similarity between the job description vector and each resume vector. The cosine similarity score ranges from 0 to 1, where 1 indicates a perfect match.
 
-Ranking
+- Ranking
 The resumes are ranked based on their cosine similarity scores with the job description. The top five resumes with the highest scores are selected and displayed.
 
 ## Implementation
-
-Streamlit Application
+#### Streamlit Application
 The application is built using Streamlit, which provides an interactive web interface for uploading resumes, entering job descriptions, and displaying results. The key steps in the implementation are:
 
 File Upload: Users can upload multiple resumes in different formats.
+
 Job Description Input: Users enter the job description in a text area.
+
 Text Extraction and Cleaning: Text is extracted from resumes and cleaned.
+
 Match Calculation: The similarity between the job description and each resume is calculated using TF-IDF and cosine similarity.
+
 Result Display: The top five matching resumes and their scores are displayed.
