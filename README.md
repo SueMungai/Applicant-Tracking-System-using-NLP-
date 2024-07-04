@@ -37,7 +37,7 @@ Text Cleaning: The extracted text is cleaned by removing non-word characters, ex
   To compare the job description and resumes, we convert the text data into numerical vectors using TF-IDF (Term Frequency-Inverse Document Frequency) vectorization. This technique helps in understanding the importance of words in the context of the documents.
 
 - Similarity Measurement
-  Cosine similarity is used to measure the similarity between the job description vector and each resume vector. The cosine similarity score ranges from 0 to 1, where 1 indicates a perfect match.
+Cosine similarity is used to measure the similarity between the job description vector and each resume vector. The cosine similarity score ranges from 0 to 1, where 1 indicates a perfect match.
 
 - Ranking
   The resumes are ranked based on their cosine similarity scores with the job description. The top five resumes with the highest scores are selected and displayed.
