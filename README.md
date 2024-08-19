@@ -3,7 +3,6 @@
 ## Business Understanding
 
 ### Overview
-
 The recruitment process is a critical function of Human Resources (HR) departments, tasked with identifying and hiring the most suitable candidates for various roles within an organization. With an increasing number of job applications, HR professionals face challenges in efficiently and effectively screening resumes to find top talent. An automated Applicant Tracking System (ATS) that leverages Natural Language Processing (NLP) can significantly enhance this process by matching candidate resumes with job descriptions, thus streamlining the selection process and ensuring the best fit for the role.
 
 ### Objective
@@ -44,7 +43,7 @@ Cosine similarity is used to measure the similarity between the job description 
 
 ## Implementation
 
-#### Streamlit Application
+## Streamlit Application
 
 The application is built using Streamlit, which provides an interactive web interface for uploading resumes, entering job descriptions, and displaying results. The key steps in the implementation are:
 
