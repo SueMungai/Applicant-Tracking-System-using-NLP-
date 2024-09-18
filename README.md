@@ -43,7 +43,7 @@ Cosine similarity is used to measure the similarity between the job description 
 
 ## Implementation
 
-## Streamlit Application
+### Streamlit Application
 
 The application is built using Streamlit, which provides an interactive web interface for uploading resumes, entering job descriptions, and displaying results. The key steps in the implementation are:
 
